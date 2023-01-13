@@ -1,3 +1,3 @@
 <?php
 
-echo "lesgoooo php";
+echo "want to go php";
