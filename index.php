@@ -66,16 +66,23 @@
     <!-- PHP Code-->
 
     <?php
-        /*$servername = "mariadbprojiac.mariadb.database.azure.com";
-        $username = "project_admin@mariadbprojiac";
-        $password = "I]nfrastructure23";
-        $database = "iac";
 
-        $con=mysqli_init(); 
-        mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-        mysqli_real_connect($con, $servername, $username, $password, $database, 3306);*/
+    $host = 'mariadbprojiac.mariadb.database.azure.com';
+    $username = 'project_admin@mariadbprojiac';
+    $password = 'I]nfrastructure23';
+    $db_name = 'iac';
 
-    echo "okok";
+    //Initializes MySQLi
+    $conn = mysqli_init();
+
+    // Establish the connection
+    mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
+
+    //If connection failed, show the error
+    if (mysqli_connect_errno())
+    {
+        die('Failed to connect to MySQL: '.mysqli_connect_error());
+    }
 
       ?>
 
