@@ -47,8 +47,8 @@
   <!-- Navigation -->
   <ul>
     <li><a class="active" href="#"><img src="img/HESSO-logo.png" height="30px" width="100px" alt=""></a></li>
-    <li><a href="#Home">Home</a></li>
-    <li><a href="words.html">Data</a></li>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="words.php">Data</a></li>
   </ul>
   
 <div class="container">
@@ -71,11 +71,9 @@
         $password = "I]nfrastructure23";
         $database = "iac";
 
-        /*$con=mysqli_init(); 
+        $con=mysqli_init(); 
         mysqli_ssl_set($con, NULL, NULL, {ca-cert filename}, NULL, NULL); 
-        mysqli_real_connect($con, $servername, $username, $password, $database, 3306);*/
-
-    echo 'ciao';
+        mysqli_real_connect($con, $servername, $username, $password, $database, 3306);
       ?>
 
   </div>
