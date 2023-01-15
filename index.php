@@ -56,7 +56,7 @@
   <div class="content">
 
   <!-- Word form-->
-<form id="wordform" class="vertical-center" action="addWord.php" method="post">
+<form class="vertical-center" action="addWord.php" method="post">
   <fieldset>
     <input type="text" name="word" placeholder="Insert a word" />
     <input type="submit" class="btn btn-primary" name="submit" value="Submit">
