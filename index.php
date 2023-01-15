@@ -56,7 +56,7 @@
   <div class="content">
 
   <!-- Word form-->
-<form id="wordform" class="vertical-center">
+<form id="wordform" class="vertical-center" action="index.php" method="post">
   <fieldset>
     <input type="text" name="word" placeholder="Insert a word" />
     <input type="button" name="next" class="next action-button" value="Send!" />
@@ -71,6 +71,7 @@
     $username = 'project_admin@mariadbprojiac';
     $password = 'I]nfrastructure23';
     $db_name = 'iac';
+    $table = 'users_words';
 
     //Initializes MySQLi
     $conn = mysqli_init();
@@ -84,6 +85,25 @@
         die('Failed to connect to MySQL: '.mysqli_connect_error());
     }
 
+    // Taking word from form
+    $word = $_REQUEST['word'];
+
+    //INSERT INTO users_words(text) VALUES ('TIO');
+
+    $sql = "INSERT INTO $table(text) VALUES ('$word')";
+
+    if(mysqli_query($conn, $sql)){
+      echo "<h3>data stored in a database successfully."
+          . " Please browse the page 'Data' to view the updated data</h3>";
+
+      echo nl2br("\n$word);
+      } else{
+          echo "Sorry $sql. "
+              . mysqli_error($conn);
+      }
+
+      // Close connection
+      mysqli_close($conn);
       ?>
 
   </div>
