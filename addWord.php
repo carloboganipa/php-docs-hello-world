@@ -12,23 +12,15 @@
     // Establish the connection
     mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
 
-    //If connection failed, show the error
-    if (mysqli_connect_errno())
-    {
-        die('Failed to connect to MySQL: '.mysqli_connect_error());
+    if(isset($_POST['submit']))
+    {    
+        $$word = $_POST['word'];
+        $sql = "INSERT INTO $table(text) VALUES ('$word')";
+        if (mysqli_query($conn, $sql)) {
+            echo "New record has been added successfully !";
+        } else {
+            echo "Error: " . $sql . ":-" . mysqli_error($conn);
+        }
+        mysqli_close($conn);
     }
-
-    // Taking word from form
-    $word = $_POST['word'];
-
-    //INSERT INTO users_words(text) VALUES ('TIO');
-
-    $sql = "INSERT INTO $table(text) VALUES ('$word')";
-    
-     // Check if the query is successful
-     if(mysqli_query($conn, $sql)){
-      echo "<h3>OK!data stored in database successfully</h3>";
-  } else{
-      echo mysqli_error($conn);
-  }
   ?>
