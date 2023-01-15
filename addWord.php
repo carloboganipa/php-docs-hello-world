@@ -19,7 +19,7 @@
     }
 
     // Taking word from form
-    $word = $_REQUEST['word'];
+    $word = $_POST['word'];
 
     //INSERT INTO users_words(text) VALUES ('TIO');
 
