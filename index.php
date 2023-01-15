@@ -62,12 +62,6 @@
     <input type="button" name="next" class="next action-button" value="Send!" />
   </fieldset>
 </form>
-
-    <!-- PHP Code-->
-
-    <?php
-  ?>
-
   </div>
 </div>
 
