@@ -27,7 +27,7 @@
     
      // Check if the query is successful
      if(mysqli_query($conn, $sql)){
-      echo "<h3>OK!data stored in a database successfully</h3>";
+      echo "<h3>OK!data stored in database successfully</h3>";
   } else{
       echo mysqli_error($conn);
   }
