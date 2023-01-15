@@ -75,59 +75,32 @@
   
 <div class="container vertical-center">
   <div class="content center">
-    <table>
-        <tr>
-          <th>Company</th>
-          <th>Contact</th>
-          <th>Country</th>
-        </tr>
-        <tr>
-          <td>Alfreds Futterkiste</td>
-          <td>Maria Anders</td>
-          <td>Germany</td>
-        </tr>
-        <tr>
-          <td>Centro comercial Moctezuma</td>
-          <td>Francisco Chang</td>
-          <td>Mexico</td>
-        </tr>
-        <tr>
-          <td>Ernst Handel</td>
-          <td>Roland Mendel</td>
-          <td>Austria</td>
-        </tr>
-        <tr>
-          <td>Island Trading</td>
-          <td>Helen Bennett</td>
-          <td>UK</td>
-        </tr>
-        <tr>
-          <td>Laughing Bacchus Winecellars</td>
-          <td>Yoshi Tannamuri</td>
-          <td>Canada</td>
-        </tr>
-        <tr>
-          <td>Magazzini Alimentari Riuniti</td>
-          <td>Giovanni Rovelli</td>
-          <td>Italy</td>
-        </tr>
-      </table>
-
     <?php
-        $servername = "mariadbprojiac.mariadb.database.azure.com";
-        $username = "project_admin@mariadbprojiac";
-        $password = "I]nfrastructure23";
+    $host = 'mariadbprojiac.mariadb.database.azure.com';
+    $username = 'project_admin@mariadbprojiac';
+    $password = 'I]nfrastructure23';
+    $db_name = 'iac';
+    $table = 'users_words';
 
-        // Create connection
-        $conn = new mysqli($servername, $username, $password);
+    //Initializes MySQLi
+    $conn = mysqli_init();
 
-        // Check connection
-        if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-        }
-        echo "Connected successfully";
-      ?>
+    // Establish the connection
+    mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
 
+    $query = "SELECT * FROM users_words;"; //You don't need a ; like you do in SQL
+    $result = mysql_query($query);
+
+    echo "<table>"; // start a table tag in the HTML
+
+    while($row = mysql_fetch_array($conn,)){   //Creates a loop to loop through results
+    echo "<tr><td>" . htmlspecialchars($row['word']) . "</tr>";  //$row['index'] the index here is a field name
+    }
+
+    echo "</table>"; //Close the table in HTML
+
+    mysql_close(); //Make sure to close out the database connection
+    ?>
   </div>
 </div>
 
