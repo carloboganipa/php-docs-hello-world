@@ -89,17 +89,17 @@
     mysqli_real_connect($conn, $host, $username, $password, $db_name, 3306);
 
     $query = "SELECT * FROM users_words;"; //You don't need a ; like you do in SQL
-    $result = mysql_query($query);
+    $result = mysqli_query($conn, $query);
 
     echo "<table>"; // start a table tag in the HTML
 
-    while($row = mysql_fetch_array($conn,)){   //Creates a loop to loop through results
+    while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
     echo "<tr><td>" . htmlspecialchars($row['word']) . "</tr>";  //$row['index'] the index here is a field name
     }
 
     echo "</table>"; //Close the table in HTML
-
-    mysql_close(); //Make sure to close out the database connection
+    
+    mysqli_close($conn);//Make sure to close out the database connection
     ?>
   </div>
 </div>
