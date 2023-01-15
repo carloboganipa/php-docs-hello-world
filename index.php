@@ -59,7 +59,7 @@
 <form id="wordform" class="vertical-center" action="addWord.php" method="post">
   <fieldset>
     <input type="text" name="word" placeholder="Insert a word" />
-    <input type="button" name="next" class="next action-button" value="Send!" />
+    <input type="submit" class="btn btn-primary" name="submit" value="Submit">
   </fieldset>
 </form>
   </div>
