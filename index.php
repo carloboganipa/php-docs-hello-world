@@ -91,20 +91,7 @@
     //INSERT INTO users_words(text) VALUES ('TIO');
 
     $sql = "INSERT INTO $table(text) VALUES ('$word')";
-
-    if(mysqli_query($conn, $sql)){
-      echo "<h3>data stored in a database successfully."
-          . " Please browse the page 'Data' to view the updated data</h3>";
-
-      echo nl2br("\n$word);
-      } else{
-          echo "Sorry $sql. "
-              . mysqli_error($conn);
-      }
-
-      // Close connection
-      mysqli_close($conn);
-      ?>
+    ?>
 
   </div>
 </div>
