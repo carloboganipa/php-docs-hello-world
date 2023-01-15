@@ -91,7 +91,17 @@
     //INSERT INTO users_words(text) VALUES ('TIO');
 
     $sql = "INSERT INTO $table(text) VALUES ('$word')";
-    ?>
+    
+     // Check if the query is successful
+     if(mysqli_query($conn, $sql)){
+      echo "<h3>data stored in a database successfully/h3>";
+  } else{
+      echo mysqli_error($conn);
+  }
+
+  // Close connection
+  mysqli_close($conn);
+  ?>
 
   </div>
 </div>
