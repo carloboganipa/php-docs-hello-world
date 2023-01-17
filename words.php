@@ -91,7 +91,7 @@
     $query = "SELECT * FROM users_words;"; //You don't need a ; like you do in SQL
     $result = mysqli_query($conn, $query);
 
-    echo "<table class=".".center .vertical-center".">"; // start a table tag in the HTML
+    echo "<p>List of inserted words:></p><br><table class=".".center .vertical-center".">"; // start a table tag in the HTML
 
     while($row = mysqli_fetch_array($result)){   //Creates a loop to loop through results
     echo "<tr><td>" . htmlspecialchars($row['text']) . "</tr>";  //$row['index'] the index here is a field name
