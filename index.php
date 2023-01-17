@@ -75,6 +75,7 @@
     <th> Error 503 </th>
     <td><button type="button" class="btn btn-danger">503</button></td>
   </tr>
+</table>
   </div>
 </div>
 
