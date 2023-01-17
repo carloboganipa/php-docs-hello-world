@@ -68,11 +68,11 @@
 <h4> Generate an HTTP error: </h4>
 <table>
   <tr>
-    <th> Error 404 </th>
+    <th> Error 404 </th><br>
     <td><button type="button" class="btn btn-danger">404</button></td>
-    <th> Error 403 </th>
+    <th> Error 403 </th><br>
     <td><button type="button" class="btn btn-danger">403</button></td>
-    <th> Error 503 </th>
+    <th> Error 503 </th><br>
     <td><button type="button" class="btn btn-danger">503</button></td>
   </tr>
 </table>
