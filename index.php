@@ -52,12 +52,13 @@
   </ul>
   
 <div class="container">
-  <h3>Projet IaC Monitoring - ID-2a 2022/2023 </h3>
+  <h2>Projet IaC Monitoring - ID-2a 2022/2023 </h2>
   <h5> by Carlo Bogni, Hugo Varenne, André Filipe Quintas Gervásio </h5>
 
   <div class="content">
 
   <!-- Word form-->
+  <h5> Insert your word to db: </h5>
 <form class="vertical-center" action="addWord.php" method="post">
   <fieldset>
     <input type="text" name="word" placeholder="Insert a word" />
@@ -66,16 +67,11 @@
 </form>
 <br>
 <h4> Generate an HTTP error: </h4>
-<table>
-  <tr>
-    <th> Error 404 </th><br>
-    <td><button type="button" class="btn btn-danger">404</button></td>
-    <th> Error 403 </th><br>
-    <td><button type="button" class="btn btn-danger">403</button></td>
-    <th> Error 503 </th><br>
-    <td><button type="button" class="btn btn-danger">503</button></td>
-  </tr>
-</table>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">404</button>
+  <button type="button" class="btn btn-danger">403</button>
+  <button type="button" class="btn btn-danger">503</button>
+</div>
   </div>
 </div>
 
