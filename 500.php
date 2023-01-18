@@ -1,5 +1,5 @@
 <?php
-function do404() {
+function do500() {
     http_response_code(500);
 }
 
