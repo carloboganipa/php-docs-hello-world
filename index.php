@@ -39,6 +39,11 @@
       font-size: 20px;
       font-weight: bold;
     }
+
+    .btn-warning {
+      width: 50px;
+      height: 30px;
+    }
     
     </style>
 </head>
@@ -72,13 +77,13 @@ require '403.php';
 <h4> Generate an HTTP error: </h4>
 <div class="btn-group btn-group-justified">
 <form action="404.php" method="post">
-    <input class="btn btn-primary" type="submit" name="err404" id="err404" value="404"/><br/>
+    <input class="btn btn-warning" type="submit" name="err404" id="err404" value="404"/><br/>
 </form>
 <form action="403.php" method="post">
-  <input class="btn btn-primary" type="submit" name="err403" id="err403" value="403"/><br/>
+  <input class="btn btn-warning" type="submit" name="err403" id="err403" value="403"/><br/>
 </form>
 <form action="403.php" method="post">
-  <input class="btn btn-primary" type="submit" name="err403" id="err403" value="403"/><br/>
+  <input class="btn btn-warning" type="submit" name="err403" id="err403" value="403"/><br/>
 </form>
 </div>
   </div>
