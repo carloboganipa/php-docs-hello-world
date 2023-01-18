@@ -71,13 +71,15 @@ require '403.php';
 <br>
 <h4> Generate an HTTP error: </h4>
 <div class="btn-group btn-group-justified">
-<form method="post">
+<form action="404.php" method="post">
     <input type="submit" name="err404" id="err404" value="404"/><br/>
-  </form>
-  <form method="post">
-    <input type="submit" name="err403" id="err403" value="403"/><br/>
-  </form>
-  <button type="button" class="btn btn-danger">503</button>
+</form>
+<form action="403.php" method="post">
+  <input type="submit" name="err403" id="err403" value="403"/><br/>
+</form>
+<form action="500.php" method="post">
+  <input type="submit" name="err500" id="err500" value="500"/><br/>
+</form>
 </div>
   </div>
 </div>
