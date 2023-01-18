@@ -4,6 +4,6 @@ function do500() {
 }
 
 if(array_key_exists('err500',$_POST)){
-   do403();
+   do500();
 }
 ?>
