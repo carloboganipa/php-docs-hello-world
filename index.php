@@ -42,6 +42,9 @@
     
     </style>
 </head>
+<?php
+require '403.php';
+?>
 <body>
 
   <!-- Navigation -->
@@ -69,7 +72,9 @@
 <h4> Generate an HTTP error: </h4>
 <div class="btn-group btn-group-justified">
   <button type="button" class="btn btn-danger">404</button>
-  <button type="button" class="btn btn-danger"><a href="403.php">403</a></button>
+  <form method="post">
+    <input type="submit" name="err403" id="err403" value="403" /><br/>
+</form>
   <button type="button" class="btn btn-danger">503</button>
 </div>
   </div>
