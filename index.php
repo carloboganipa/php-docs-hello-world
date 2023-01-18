@@ -83,8 +83,8 @@ require '403.php';
 <form action="403.php" method="post">
   <input class="btn btn-warning btn-err" type="submit" name="err403" id="err403" value="403"/><br/>
 </form>
-<form action="403.php" method="post">
-  <input class="btn btn-warning btn-err" type="submit" name="err403" id="err403" value="403"/><br/>
+<form action="400.php" method="post">
+  <input class="btn btn-warning btn-err" type="submit" name="err400" id="err400" value="403"/><br/>
 </form>
 </div>
   </div>
