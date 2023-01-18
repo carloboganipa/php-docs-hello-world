@@ -77,15 +77,15 @@ require '403.php';
 <br>
 <h4> Generate an HTTP error: </h4>
 <div class="btn-group btn-group-justified">
-<form action="404.php" method="post">
-    <input class="btn btn-warning btn-err" type="submit" name="err404" id="err404" value="404"/><br/>
-</form>
-<form action="403.php" method="post">
-  <input class="btn btn-warning btn-err" type="submit" name="err403" id="err403" value="403"/><br/>
-</form>
-<form action="400.php" method="post">
-  <input class="btn btn-warning btn-err" type="submit" name="err400" id="err400" value="400"/><br/>
-</form>
+  <form action="400.php" method="post">
+    <input class="btn btn-warning btn-err" type="submit" name="err400" id="err400" value="400"/><br/>
+  </form>
+  <form action="403.php" method="post">
+    <input class="btn btn-warning btn-err" type="submit" name="err403" id="err403" value="403"/><br/>
+  </form>
+  <form action="404.php" method="post">
+      <input class="btn btn-warning btn-err" type="submit" name="err404" id="err404" value="404"/><br/>
+  </form>
 </div>
   </div>
 </div>
