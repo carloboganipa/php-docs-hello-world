@@ -62,7 +62,7 @@ require '403.php';
   
 <div class="container">
   <h2>Projet IaC Monitoring - ID-2a 2022/2023 </h2>
-  <h5> by Carlo Bogni, Hugo Varenne, André Filipe Quintas Gervásio </h5>
+  <h5> by Carlo Bogani, Hugo Varenne, André Filipe Quintas Gervásio </h5>
 
   <div class="content">
 
