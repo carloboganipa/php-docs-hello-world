@@ -68,9 +68,9 @@ require '403.php';
 
   <!-- Word form-->
   <div>
-    <h5> Insert your word to db: </h5>
     <form class="vertical-center" action="addWord.php" method="post">
       <fieldset>
+        <h5> Insert your word to db: </h5>
         <input type="text" name="word" placeholder="Insert a word" />
         <input type="submit" class="btn btn-primary" name="submit" value="Submit">
       </fieldset>
@@ -92,7 +92,7 @@ require '403.php';
     </form>
   </div>
  </div>
- 
+
 </div>
 
 </body>
