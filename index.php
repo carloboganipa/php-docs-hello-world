@@ -67,27 +67,32 @@ require '403.php';
   <div class="content">
 
   <!-- Word form-->
-  <h5> Insert your word to db: </h5>
-<form class="vertical-center" action="addWord.php" method="post">
-  <fieldset>
-    <input type="text" name="word" placeholder="Insert a word" />
-    <input type="submit" class="btn btn-primary" name="submit" value="Submit">
-  </fieldset>
-</form>
-<br>
-<h4> Generate an HTTP error: </h4>
-<div class="btn-group btn-group-justified">
-  <form action="400.php" method="post">
-    <input class="btn btn-warning btn-err" type="submit" name="err400" id="err400" value="400"/><br/>
-  </form>
-  <form action="403.php" method="post">
-    <input class="btn btn-warning btn-err" type="submit" name="err403" id="err403" value="403"/><br/>
-  </form>
-  <form action="404.php" method="post">
-      <input class="btn btn-warning btn-err" type="submit" name="err404" id="err404" value="404"/><br/>
-  </form>
-</div>
+  <div>
+    <h5> Insert your word to db: </h5>
+    <form class="vertical-center" action="addWord.php" method="post">
+      <fieldset>
+        <input type="text" name="word" placeholder="Insert a word" />
+        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+      </fieldset>
+    </form>
   </div>
+<br>
+<!-- Generation of errors -->
+<div>
+  <h4> Generate an HTTP error: </h4>
+  <div class="btn-group btn-group-justified">
+    <form action="400.php" method="post">
+      <input class="btn btn-warning btn-err" type="submit" name="err400" id="err400" value="400"/><br/>
+    </form>
+    <form action="403.php" method="post">
+      <input class="btn btn-warning btn-err" type="submit" name="err403" id="err403" value="403"/><br/>
+    </form>
+    <form action="404.php" method="post">
+        <input class="btn btn-warning btn-err" type="submit" name="err404" id="err404" value="404"/><br/>
+    </form>
+  </div>
+ </div>
+ 
 </div>
 
 </body>
